@@ -23,7 +23,6 @@ project-name==0.2.175
 pygame==2.0.1
 pyinstaller==4.2
 pyinstaller-hooks-contrib==2020.11
-pypiwin32==223
 PySide2==5.15.2
 pyTelegramBotAPI==3.7.6
 python-dateutil==2.8.1
