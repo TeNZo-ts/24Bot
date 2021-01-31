@@ -69,12 +69,12 @@ audarma = KeyboardButton('Аударма')
 samo_pozn = KeyboardButton('Самопознание')
 ist_kz = KeyboardButton('История Казахстана')
 chem_bio = KeyboardButton('Химия/Биология')
-mir_ist1 = KeyboardButton('Всемирная история (1Г')
+mir_ist1 = KeyboardButton('Всемирная история (1Г)')
 geo = KeyboardButton('География')
 law_bas = KeyboardButton('Основы права')
 chemEng = KeyboardButton('Химия (English')
 phys = KeyboardButton('Физика')
-mir_ist2 = KeyboardButton('Всемирная история (2Г')
+mir_ist2 = KeyboardButton('Всемирная история (2Г)')
 # Teachers 
 Aizada_A = KeyboardButton('Айзада Адильханкызы')
 Gulmira_A = KeyboardButton('Гульмира Апарбаева')
@@ -196,14 +196,7 @@ async def menu(message: types.Message):
 	# Monday
 	elif message.text == 'Понедельник 10(A)':
 		await message.reply('➡️', reply_markup=markup_mon_10A)
-	elif message.text == 'Нурлан Токтарбекулы':
-		await message.answer('English\nНурлан Токтарбекулы -\nПодключиться:\nhttps://us04web.zoom.us/j/7461456484?pwd=NW9Ob1VPNkw1ZzdUaTgzUXFjeWZtQT09\nИдентификатор: 746 145 6484\nКод: 1995', reply_markup=markup_classes)
-	elif message.text == 'Зиалы Алтаевна':
-		await message.answer('Алгебра\nЗиалы Алтаевна -\nПодключиться:\nhttps://us04web.zoom.us/j/5919934745?pwd=TmVnTnNyRUxuUVVjcTBhZHFXWFUyZz09\nИдентификатор: 591 993 4745\nКод: 2020', reply_markup=markup_classes)
-	elif message.text == 'Камида Тулеметова':
-		await message.answer('Алгебра\nКамида Тулеметова -\nПодключиться:\nhttps://us04web.zoom.us/j/7461456484?pwd=NW9Ob1VPNkw1ZzdUaTgzUXFjeWZtQT09\nИдентификатор: 268 124 4460\nКод: 144475', reply_markup=markup_classes)
-	elif message.text == 'Туганай Аяпова':
-		await message.answer('Алгебра\nКамида Тулеметова -\nПодключиться:\nhttps://us04web.zoom.us/j/9203579917?pwd=LzhINlRCbEk5eGs2NVFNYlVaQjlUQT09\nИдентификатор: 920 357 9917\nКод: 158354', reply_markup=markup_classes)
+
 	# Class AE
 	elif message.text == '10(AE)':
 		tt10AE_1 = open('tt10ae.jpg', "rb")
@@ -293,7 +286,7 @@ async def menu(message: types.Message):
 		await message.answer('География\nАйгерим Еркинбекова -\nПодключиться:\nhttps://us04web.zoom.us/j/6281342021?pwd=S3lZdERoT3lmVVJKeDJpN1djbE9oQT09\nИдентификатор: 628 134 2021\nКод:897756', reply_markup=markup_classes)
 	elif message.text == 'Маулет Кисса':
 		await message.answer('Физика\nМаулет Кисса -\nПодключиться:\nhttps://us04web.zoom.us/j/5261561075?pwd=SUdYcXZoalFEVkhDV0RFN0U0NjZ1QT09\nИдентификатор: 526 156 1075\nКод: 172522', reply_markup=markup_classes)
-	elif message.text == 'Bakhyt_N':
+	elif message.text == 'Бакыт Нуркожаева':
 		await message.answer('Казахский язык\nБакыт Нуркожаева -\nПодключиться:\nhttps://us04web.zoom.us/j/4865772347?pwd=SWhwNHNjRWE1TTlwRjJvZjFpNnphQT09\nИдентификатор: 486 577 2347\nКод: jBdv6e', reply_markup=markup_classes)
 	elif message.text == 'Мурат Буланов':	
 		await message.answer('Алгебра\nМурат Буланов -\nПодключиться:\nhttps://us04web.zoom.us/j/5803259738?pwd=QUphOEhPNlgzSmxMajkxV3VrbkhrZz09\nИдентификатор: 580 325 9738\nКод: 123456', reply_markup=markup_classes)
@@ -313,7 +306,13 @@ async def menu(message: types.Message):
 		await message.answer('Аударма\nГульшат Д. -\nПодключиться:\nhttps://us04web.zoom.us/j/6776997623?pwd=eWhSSUE5TlFGc2hmWXpsU0poSDFsZz09\nИдентификатор: 677 699 7623\nКод: 192105', reply_markup=markup_classes)
 	elif message.text == 'Жаркын':
 		await message.answer('Аударма\nЖаркын -\nПодключиться:\nnone\nИдентификатор: none\nКод: none', reply_markup=markup_classes)
-	elif message.text == 'Tuganai_A':
+	elif message.text == 'Нурлан Токтарбекулы':
+		await message.answer('English\nНурлан Токтарбекулы -\nПодключиться:\nhttps://us04web.zoom.us/j/7461456484?pwd=NW9Ob1VPNkw1ZzdUaTgzUXFjeWZtQT09\nИдентификатор: 746 145 6484\nКод: 1995', reply_markup=markup_classes)
+	elif message.text == 'Зиалы Алтаевна':
+		await message.answer('Алгебра\nЗиалы Алтаевна -\nПодключиться:\nhttps://us04web.zoom.us/j/5919934745?pwd=TmVnTnNyRUxuUVVjcTBhZHFXWFUyZz09\nИдентификатор: 591 993 4745\nКод: 2020', reply_markup=markup_classes)
+	elif message.text == 'Камида Тулеметова':
+		await message.answer('Алгебра\nКамида Тулеметова -\nПодключиться:\nhttps://us04web.zoom.us/j/7461456484?pwd=NW9Ob1VPNkw1ZzdUaTgzUXFjeWZtQT09\nИдентификатор: 268 124 4460\nКод: 144475', reply_markup=markup_classes)
+	elif message.text == 'Туганай Аяпова':
 		await message.answer('Казахский язык\nТуганай Аяпова -\nПодключиться:\nhttps://us04web.zoom.us/j/9203579917?pwd=LzhINlRCbEk5eGs2NVFNYlVaQjlUQT09\nИдентификатор: 920 357 9917\nКод: 158354', reply_markup=markup_classes)
 
 
