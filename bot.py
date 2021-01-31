@@ -23,26 +23,26 @@ button_daryn = KeyboardButton('Daryn Online')
 button_lyceum = KeyboardButton('Lyceum')
 button_info = KeyboardButton('Info')
 # Classes
-button_10a = KeyboardButton('10(A)')
-button_10ae = KeyboardButton('10(AE)')
-button_10b = KeyboardButton('10(B)')
-button_10v = KeyboardButton('10(V)')
+button_10a = KeyboardButton('10(a)')
+button_10ae = KeyboardButton('10(ae)')
+button_10b = KeyboardButton('10(b)')
+button_10v = KeyboardButton('10(v)')
 # Timetable 10(a)
-button_timetable_10A = KeyboardButton('Расписание 10(A)')
+button_timetable_10a = KeyboardButton('Расписание 10(a)')
 # Week 10(a)
-button_monday_10A = KeyboardButton('Понедельник 10(A)')
-button_tuesday_10A = KeyboardButton('Вторник 10(A)')
-button_wednesday_10A = KeyboardButton('Среда 10(A)')
-button_thursday_10A = KeyboardButton('Четверг 10(A)')
-button_friday_10A = KeyboardButton('Пятница 10(A)')
+button_monday_10a = KeyboardButton('Понедельник 10(a)')
+button_tuesday_10a = KeyboardButton('Вторник 10(a)')
+button_wednesday_10a = KeyboardButton('Среда 10(a)')
+button_thursday_10a = KeyboardButton('Четверг 10(a)')
+button_friday_10a = KeyboardButton('Пятница 10(a)')
 # Timetable 10(ae)
-button_timetable_10AE = KeyboardButton('Расписание 10(AE)')
+button_timetable_10ae = KeyboardButton('Расписание 10(ae)')
 # Week 10(ae)
-button_monday_10AE = KeyboardButton('Понедельник 10(AE)')
-button_tuesday_10AE = KeyboardButton('Вторник 10(AE)')
-button_wednesday_10AE = KeyboardButton('Среда 10(AE)')
-button_thursday_10AE = KeyboardButton('Четверг 10(AE)')
-button_friday_10AE = KeyboardButton('Пятница 10(AE)')
+button_monday_10ae = KeyboardButton('Понедельник 10(ae)')
+button_tuesday_10ae = KeyboardButton('Вторник 10(ae)')
+button_wednesday_10ae = KeyboardButton('Среда 10(ae)')
+button_thursday_10ae = KeyboardButton('Четверг 10(ae)')
+button_friday_10ae = KeyboardButton('Пятница 10(ae)')
 # Lessons
 infor = KeyboardButton('Информатика')
 physEng = KeyboardButton('Физика (English)')
@@ -130,20 +130,20 @@ markup_DOsub = ReplyKeyboardMarkup(resize_keyboard=True).add(button_back)
 # Classes
 markup_classes = ReplyKeyboardMarkup(resize_keyboard=True).add(button_back).row(button_10a, button_10ae).row(button_10b, button_10v)
 
-# Class 10A
-markup_week_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(button_monday_10A, button_tuesday_10A).row(button_wednesday_10A, button_thursday_10A, button_friday_10A).row(button_timetable_10A, button_back)
-markup_mon_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(eng, ist_kz).add(abai).row(phystrain, chem_bio, mir_ist1).row(button_timetable_10A, button_back)
-markup_tue_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(geo, kz_lit).add(voen).row(law_bas, chemEng, audarma).row(button_timetable_10A, button_back)
-markup_wed_10A =ReplyKeyboardMarkup(resize_keyboard=True).row(algebra, infor, phys).add(chemEng).row(button_timetable_10A, button_back)
-markup_thu_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(rus_lit, kz).row(geom, ling, chem_bio).row(button_timetable_10A, button_back)
-markup_fri_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(algebra, phystrain).add(class_hour).row(samo_pozn, eco, mir_ist2).row(button_timetable_10A, button_back)
-# Class 10AE
-markup_week_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(button_monday_10AE, button_tuesday_10AE).row(button_wednesday_10AE, button_thursday_10AE, button_friday_10AE).row(button_timetable_10AE, button_back)
-markup_mon_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(infor, physEng, phystrain).row(geo_phys).row(kz, bio, law_bas1).row(button_timetable_10AE, button_back)
-markup_tue_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(kz_lit, voen, class_hour).row(algebra, mir_ist).row(button_timetable_10AE, button_back)
-markup_wed_10AE =ReplyKeyboardMarkup(resize_keyboard=True).row(phys_geo, geom, eng).add(eco).row(button_timetable_10AE, button_back)
-markup_thu_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(chem, rus_lit).add(ling).row(abai, phystrain, law_bas2).row(button_timetable_10AE, button_back)
-markup_fri_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(physEng, audarma, geo_phys).row(phys_geo, samo_pozn, ist_kz).add(algebra).row(button_timetable_10AE, button_back)
+# Class 10a
+markup_week_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(button_monday_10a, button_tuesday_10a).row(button_wednesday_10a, button_thursday_10a, button_friday_10a).row(button_timetable_10a, button_back)
+markup_mon_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(eng, ist_kz).add(abai).row(phystrain, chem_bio, mir_ist1).row(button_timetable_10a, button_back)
+markup_tue_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(geo, kz_lit).add(voen).row(law_bas, chemEng, audarma).row(button_timetable_10a, button_back)
+markup_wed_10A =ReplyKeyboardMarkup(resize_keyboard=True).row(algebra, infor, phys).add(chemEng).row(button_timetable_10a, button_back)
+markup_thu_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(rus_lit, kz).row(geom, ling, chem_bio).row(button_timetable_10a, button_back)
+markup_fri_10A = ReplyKeyboardMarkup(resize_keyboard=True).row(algebra, phystrain).add(class_hour).row(samo_pozn, eco, mir_ist2).row(button_timetable_10a, button_back)
+# Class 10ae
+markup_week_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(button_monday_10ae, button_tuesday_10ae).row(button_wednesday_10ae, button_thursday_10ae, button_friday_10ae).row(button_timetable_10ae, button_back)
+markup_mon_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(infor, physEng, phystrain).row(geo_phys).row(kz, bio, law_bas1).row(button_timetable_10ae, button_back)
+markup_tue_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(kz_lit, voen, class_hour).row(algebra, mir_ist).row(button_timetable_10ae, button_back)
+markup_wed_10AE =ReplyKeyboardMarkup(resize_keyboard=True).row(phys_geo, geom, eng).add(eco).row(button_timetable_10ae, button_back)
+markup_thu_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(chem, rus_lit).add(ling).row(abai, phystrain, law_bas2).row(button_timetable_10ae, button_back)
+markup_fri_10AE = ReplyKeyboardMarkup(resize_keyboard=True).row(physEng, audarma, geo_phys).row(phys_geo, samo_pozn, ist_kz).add(algebra).row(button_timetable_10ae, button_back)
 
 # Groups 
 markup_infor = ReplyKeyboardMarkup(resize_keyboard=True).row(Aizada_A, Gulmira_A)
@@ -182,30 +182,30 @@ async def menu(message: types.Message):
 		await message.reply('Введите код доступа:\n\nЕсли у вас нет кода доступа, обратитесь к основателям либо покиньте раздел.', reply_markup=markup_DOsub)
 	# Info
 	elif message.text == 'Info': 
-		await message.reply('Привет👋 Я бот🤖\nМои разработчики усердно развивают проект с двух сторон и на достигнутом останавливаться не собираються👌\nМы будем рады принять любую помощь в развитии проекта.\nВ случаи отсутствия Вашего класса, наберитесь терпения и вскоре мы его добавим.\n\nОснователи - @TeNZo_ts, @Kezuh\n\nКоманды:\n/start - Запустить бота\n/open - Открыть меню\n/close - Закрыть меню\n\nНа данный момент доступно:⤵️\n10(a) класс: Понедельник\n10(ае) класс: FULL\nDaryn Online\n\nОбновления:\nПодключили бота на хостинг✅\nБот работает стабильно и доступен 24/7✅\nРаботаем над 10А классом👍\nРаботаем над Daryn Online👍\n\nОбнаружили ошибку либо имеются пожелания и идеи по развитию проекта? Будем рады выслушать Ваше предложение/критику - @TeNZo_ts\n\nБот обновляется ежедневно и становиться лучше каждым днем!🤟', reply_markup=markup_back)
+		await message.reply('Привет👋 Я бот🤖\nМои разработчики усердно развивают проект с двух сторон и на достигнутом останавливаться не собираються👌\nМы будем рады принять любую помощь в развитии проекта.\nВ случаи отсутствия Вашего класса, наберитесь терпения и вскоре мы его добавим.\n\nОснователи - @TeNZo_ts, @Kezuh\n\nКоманды:\n/start - Запустить бота\n/open - Открыть меню\n/close - Закрыть меню\n\nНа данный момент доступно:⤵️\n10(a) класс: Понедельник\n10(ае) класс: FULL\nDaryn Online\n\nОбновления:\nПодключили бота на хостинг✅\nБот работает стабильно и доступен 24/7✅\nРаботаем над 10(a) классом👍\nРаботаем над Daryn Online👍\n\nОбнаружили ошибку либо имеются пожелания и идеи по развитию проекта? Будем рады выслушать Ваше предложение/критику - @TeNZo_ts\n\nБот обновляется ежедневно и становиться лучше каждым днем!🤟', reply_markup=markup_back)
 	# Lyceum
 	elif message.text == 'Lyceum':
 		await message.reply('➡️', reply_markup=markup_classes)
-	# CLASS A
-	elif message.text == '10(A)':
-		tt10A_1 = open('tt10a.png', "rb")
-		await bot.send_photo(message.chat.id, tt10A_1, '⚡️Ниже, выберите день недели, для получения идентификатора Zoom⤵️', reply_markup=markup_week_10A)
-	elif message.text == 'Расписание 10(A)':
-		tt10A_2 = open('tt10a.png', "rb")
-		await bot.send_photo(message.chat.id, tt10A_2, '➡️', reply_markup=markup_week_10A)
+	# CLASS 10a
+	elif message.text == '10(a)':
+		tt10a_1 = open('tt10a.png', "rb")
+		await bot.send_photo(message.chat.id, tt10a_1, '⚡️Ниже, выберите день недели, для получения идентификатора Zoom⤵️', reply_markup=markup_week_10A)
+	elif message.text == 'Расписание 10(a)':
+		tt10a_2 = open('tt10a.png', "rb")
+		await bot.send_photo(message.chat.id, tt10a_2, '➡️', reply_markup=markup_week_10A)
 	# Monday
-	elif message.text == 'Понедельник 10(A)':
+	elif message.text == 'Понедельник 10(a)':
 		await message.reply('➡️', reply_markup=markup_mon_10A)
 
-	# Class AE
-	elif message.text == '10(AE)':
-		tt10AE_1 = open('tt10ae.jpg', "rb")
-		await bot.send_photo(message.chat.id, tt10AE_1, '⚡️Ниже, выберите день недели, для получения идентификатора Zoom⤵️', reply_markup=markup_week_10AE)
-	elif message.text == 'Расписание 10(AE)':
-		tt10AE_2 = open('tt10ae.jpg', "rb")
-		await bot.send_photo(message.chat.id, tt10AE_2, '➡️', reply_markup=markup_week_10AE)
+	# Class 10ae
+	elif message.text == '10(ae)':
+		tt10ae_1 = open('tt10ae.jpg', "rb")
+		await bot.send_photo(message.chat.id, tt10ae_1, '⚡️Ниже, выберите день недели, для получения идентификатора Zoom⤵️', reply_markup=markup_week_10AE)
+	elif message.text == 'Расписание 10(ae)':
+		tt10ae_2 = open('tt10ae.jpg', "rb")
+		await bot.send_photo(message.chat.id, tt10ae_2, '➡️', reply_markup=markup_week_10AE)
 	# Monday
-	elif message.text == 'Понедельник 10(AE)':
+	elif message.text == 'Понедельник 10(ae)':
 		await message.reply('➡️', reply_markup=markup_mon_10AE)
 	elif message.text == 'Информатика':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_infor)
@@ -222,7 +222,7 @@ async def menu(message: types.Message):
 	elif message.text == 'Основы права (1Г)':
 		await message.answer('Основы права\nРысхан Байшыгашова -\nПодключиться:\nhttps://us04web.zoom.us/j/4182789875?pwd=S3Z2UG9taUlaajRVV05IUktHblMzdz09\nИдентификатор: 418 278 9875\nКод: 029958', reply_markup=markup_classes)
 	# Tuesday
-	elif message.text == 'Вторник 10(AE)':
+	elif message.text == 'Вторник 10(ae)':
 		await message.reply('➡️', reply_markup=markup_tue_10AE)
 	elif message.text == 'Казахская литература':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_kz)
@@ -235,7 +235,7 @@ async def menu(message: types.Message):
 	elif message.text == 'Всемирная история':
 		await message.answer('Всемирная история\nРысхан Байшыгашова\nПодключиться:\nhttps://us04web.zoom.us/j/4182789875?pwd=S3Z2UG9taUlaajRVV05IUktHblMzdz09\nИдентификатор: 418 278 9875\nКод: 029958', reply_markup=markup_classes)
 	# Wednesday 
-	elif message.text == 'Среда 10(AE)':
+	elif message.text == 'Среда 10(ae)':
 		await message.reply('➡️', reply_markup=markup_wed_10AE)
 	elif message.text == 'Физика/География':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_phys_geo)
@@ -246,7 +246,7 @@ async def menu(message: types.Message):
 	elif message.text == 'Экономика':
 		await message.answer('Экономика\nГульбаршын Долаева -\nПодключиться:\nhttps://us04web.zoom.us/j/6659425539?pwd=ak9PdEJqZnlhYkp0cTc5VkxRQW13UT09\nИдентификатор: 665 942 5539\nКод: 99999', reply_markup=markup_classes)
 	# Thursday
-	elif message.text == 'Четверг 10(AE)':
+	elif message.text == 'Четверг 10(ae)':
 		await message.reply('➡️', reply_markup=markup_thu_10AE)
 	elif message.text == 'Химия':
 		await message.answer('Химия\nСаулетхан Амир -\nПодключиться:\nnone\nИдентификатор: none\nКод: none', reply_markup=markup_classes)
@@ -259,7 +259,7 @@ async def menu(message: types.Message):
 	elif message.text == 'Основы права (2Г)':
 		await message.answer('Основы права\nРысхан Байшыгашова -\nПодключиться:\nhttps://us04web.zoom.us/j/4182789875?pwd=S3Z2UG9taUlaajRVV05IUktHblMzdz09\nИдентификатор: 418 278 9875\nКод: 029958', reply_markup=markup_classes)
 	# Friday
-	elif message.text == 'Пятница 10(AE)':
+	elif message.text == 'Пятница 10(ae)':
 		await message.reply('➡️', reply_markup=markup_fri_10AE)
 	elif message.text == 'Аударма':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_audarma)
@@ -268,10 +268,10 @@ async def menu(message: types.Message):
 	elif message.text == 'История Казахстана':
 		await message.answer('История Казахстана\nРысхан Байшыгашова -\nПодключиться:\nhttps://us04web.zoom.us/j/4182789875?pwd=S3Z2UG9taUlaajRVV05IUktHblMzdz09\nИдентификатор: 418 278 9875\nКод: 029958', reply_markup=markup_classes)
 	# CLASS B
-	elif message.text == '10(B)':
+	elif message.text == '10(b)':
 		await message.reply('На данный момент доступен только класс "10(AE)". Разработка уже в процессе, ждите обновлений!➡️', reply_markup=markup_menu)
 	# CLASS V
-	elif message.text == '10(V)':
+	elif message.text == '10(v)':
 		await message.reply('На данный момент доступен только класс "10(AE)". Разработка уже в процессе, ждите обновлений!➡️', reply_markup=markup_menu)
 	# Teachers
 	elif message.text == 'Айзада Адильханкызы':
