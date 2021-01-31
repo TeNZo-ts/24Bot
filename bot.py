@@ -187,7 +187,7 @@ async def menu(message: types.Message):
 	elif message.text == '10(A)':
 		tt10A_1 = open('tt10a.png', "rb")
 		await bot.send_photo(message.chat.id, tt10A_1, '⚡️Ниже, выберите день недели, для получения идентификатора Zoom⤵️', reply_markup=markup_week_10A)
-	elif message.text == 'Расписание 10(AE)':
+	elif message.text == 'Расписание 10(A)':
 		tt10A_2 = open('tt10a.png', "rb")
 		await bot.send_photo(message.chat.id, tt10A_2, '➡️', reply_markup=markup_week_10A)
 	# Monday
@@ -199,7 +199,6 @@ async def menu(message: types.Message):
 		await message.answer('Алгебра\nЗиалы Алтаевна -\nПодключиться:\nhttps://us04web.zoom.us/j/5919934745?pwd=TmVnTnNyRUxuUVVjcTBhZHFXWFUyZz09\nИдентификатор: 591 993 4745\nКод: 2020', reply_markup=markup_classes)
 	elif message.text == 'Камида Тулеметова':
 		await message.answer('Алгебра\nКамида Тулеметова -\nПодключиться:\nhttps://us04web.zoom.us/j/7461456484?pwd=NW9Ob1VPNkw1ZzdUaTgzUXFjeWZtQT09\nИдентификатор: 268 124 4460\nКод: 144475', reply_markup=markup_classes)
-
 
 	# Class AE
 	elif message.text == '10(AE)':
