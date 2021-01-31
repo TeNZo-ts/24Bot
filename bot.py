@@ -323,7 +323,7 @@ async def menu(message: types.Message):
 		await message.answer('Казахский язык\nТуганай Аяпова -\nПодключиться:\nhttps://us04web.zoom.us/j/9203579917?pwd=LzhINlRCbEk5eGs2NVFNYlVaQjlUQT09\nИдентификатор: 920 357 9917\nКод: 158354', reply_markup=markup_classes)
 	# Daryn
 	elif message.text == '2San':
-		await message.reply('Доступ получен✅\n\nВ наличии-\nИстория Казахстана: 1-12 тем\nОсновы права: 10-23 тем \n\nВыберите предмет:', reply_markup=markup_DO)
+		await message.reply('Доступ получен✅\n\nВ наличии -\nИстория Казахстана: 1-12 тем\nОсновы права: 10-23 тем \n\nВыберите предмет:', reply_markup=markup_DO)
 	# ist_kz
 	elif message.text == 'Иcтoрия Кaзaxcтaнa':
 		await message.reply('Выберите тему:', reply_markup=markup_ist_kz)
