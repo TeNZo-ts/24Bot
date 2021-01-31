@@ -80,6 +80,7 @@ Aizada_A = KeyboardButton('Айзада Адильханкызы')
 Gulmira_A = KeyboardButton('Гульмира Апарбаева')
 Aigerim_E = KeyboardButton('Айгерим Еркинбекова')
 Maulet_K = KeyboardButton('Маулет Кисса')
+Bakhyt_N = KeyboardButton('Бакыт Нуркожаева')
 Murat_B = KeyboardButton('Мурат Буланов')
 Asem_B = KeyboardButton('Асем Буланова')
 Asel_M = KeyboardButton('Асель Муханова')
@@ -93,6 +94,7 @@ Zharkyn = KeyboardButton('Жаркын')
 Nurlan_T = KeyboardButton('Нурлан Токтарбекулы')
 Zialy_A = KeyboardButton('Зиалы Алтаевна')
 Kamida_T = KeyboardButton('Камида Тулеметова')
+Tuganai_A = KeyboardButton('Туганай Аяпова')
 
 #Предметы для Daryn (a,e,o)
 button_daryn_1 = KeyboardButton('Гeометрия')
@@ -153,6 +155,7 @@ markup_english = ReplyKeyboardMarkup(resize_keyboard=True).row(Nurlan_T, Gulzhat
 markup_rus_lit = ReplyKeyboardMarkup(resize_keyboard=True).row(Zhanna_B, Zhanna_Z)
 markup_ling = ReplyKeyboardMarkup(resize_keyboard=True).row(Zhadyra_B, Kyrmyzy_N)
 markup_audarma = ReplyKeyboardMarkup(resize_keyboard=True).row(Gulzhat_D, Zharkyn)
+markup_kz = ReplyKeyboardMarkup(resize_keyboard=True).add(Tuganai_A).add(Bakhyt_N)
 
 # Daryn Online
 markup_DO = ReplyKeyboardMarkup(resize_keyboard=True).add(button_back).row(button_daryn_1, button_daryn_2).row(button_daryn_3, button_daryn_4, button_daryn_5).row(button_daryn_6, button_daryn_7).row(button_daryn_8, button_daryn_9, button_daryn_10).row(button_daryn_11, button_daryn_12)
@@ -199,7 +202,8 @@ async def menu(message: types.Message):
 		await message.answer('Алгебра\nЗиалы Алтаевна -\nПодключиться:\nhttps://us04web.zoom.us/j/5919934745?pwd=TmVnTnNyRUxuUVVjcTBhZHFXWFUyZz09\nИдентификатор: 591 993 4745\nКод: 2020', reply_markup=markup_classes)
 	elif message.text == 'Камида Тулеметова':
 		await message.answer('Алгебра\nКамида Тулеметова -\nПодключиться:\nhttps://us04web.zoom.us/j/7461456484?pwd=NW9Ob1VPNkw1ZzdUaTgzUXFjeWZtQT09\nИдентификатор: 268 124 4460\nКод: 144475', reply_markup=markup_classes)
-
+	elif message.text == 'Туганай Аяпова':
+		await message.answer('Алгебра\nКамида Тулеметова -\nПодключиться:\nhttps://us04web.zoom.us/j/9203579917?pwd=LzhINlRCbEk5eGs2NVFNYlVaQjlUQT09\nИдентификатор: 920 357 9917\nКод: 158354', reply_markup=markup_classes)
 	# Class AE
 	elif message.text == '10(AE)':
 		tt10AE_1 = open('tt10ae.jpg', "rb")
@@ -212,22 +216,14 @@ async def menu(message: types.Message):
 		await message.reply('➡️', reply_markup=markup_mon_10AE)
 	elif message.text == 'Информатика':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_infor)
-	elif message.text == 'Айзада Адильханкызы':
-		await message.answer('Информатика\nАйазада Адилханова -\nПодключиться:\nhttps://us04web.zoom.us/j/6739738314?pwd=UlQzc2hxcVR4QWlnMFQ3YTVnSjcxQT09\nИдентификатор: 673 973 8314\nКод: 112076', reply_markup=markup_classes)
-	elif message.text == 'Гульмира Апарбаева':
-		await message.answer('Информатика\nГульмира Апарбаева -\nПодключиться:\nhttps://us04web.zoom.us/j/6671115307?pwd=K1JsQ3ZPczJVRHRNVGgrTlF6VVhiUT09\nИдентификатор: 667 111 5307\nКод: 551171', reply_markup=markup_classes)
 	elif message.text == 'Физика (English)':
 		await message.answer('Физика\nКуаныш Жакпаев -\nПодключиться:\nhttps://us04web.zoom.us/j/5883286704?pwd=dG9sUkVkazFTNUEvTDJCcUNKNEUrQT09\nИдентификатор: 588 328 6704\nКод: 24', reply_markup=markup_classes)
 	elif message.text == 'Физкультура':
 		await message.answer('Физкультура\nАзат Жақияұлы -\nПодключиться:https://us05web.zoom.us/j/9940612911?pwd=djNmdktPY0oyc2Iva2w0aXFBOXc2UT09\nИдентификатор: 994 061 2911\nКод: 24', reply_markup=markup_classes)
 	elif message.text == 'География/Физика':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_geo_phys)
-	elif message.text == 'Айгерим Еркинбекова':
-		await message.answer('География\nАйгерим Еркинбекова -\nПодключиться:\nhttps://us04web.zoom.us/j/6281342021?pwd=S3lZdERoT3lmVVJKeDJpN1djbE9oQT09\nИдентификатор: 628 134 2021\nКод:897756', reply_markup=markup_classes)
-	elif message.text == 'Маулет Кисса':
-		await message.answer('Физика\nМаулет Кисса -\nПодключиться:\nhttps://us04web.zoom.us/j/5261561075?pwd=SUdYcXZoalFEVkhDV0RFN0U0NjZ1QT09\nИдентификатор: 526 156 1075\nКод: 172522', reply_markup=markup_classes)
 	elif message.text == 'Казахский язык':
-		await message.answer('Казахский язык\nБакыт Нуркожаева -\nПодключиться:https://us04web.zoom.us/j/4865772347?pwd=SWhwNHNjRWE1TTlwRjJvZjFpNnphQT09\nИдентификатор: 486 577 2347\nКод: jBdv6e', reply_markup=markup_classes)
+		await message.reply('Выберите своего учителя➡️', reply_markup=markup_kz)
 	elif message.text == 'Биология':
 		await message.answer('Биология\nДаулен Муталиев -\nПодключиться:\nhttps://us04web.zoom.us/j/5953647658?pwd=SFlWOU9YVXlnc1h4MXFYcUt3K3JyUT09\nИдентификатор: 595 364 7658\nКод: 434547', reply_markup=markup_classes)
 	elif message.text == 'Основы права (1Г)':
@@ -236,17 +232,13 @@ async def menu(message: types.Message):
 	elif message.text == 'Вторник 10(AE)':
 		await message.reply('➡️', reply_markup=markup_tue_10AE)
 	elif message.text == 'Казахская литература':
-		await message.answer('Казахская литература\nБақыт Нуркожаева -\nПодключиться:\nhttps://us04web.zoom.us/j/4865772347?pwd=SWhwNHNjRWE1TTlwRjJvZjFpNnphQT09\nИдентификатор: 486 577 2347\nКод: jBdv6e', reply_markup=markup_classes)
+		await message.reply('Выберите своего учителя➡️', reply_markup=markup_kz)
 	elif message.text == 'Военная подготовка':
 		await message.answer('Военная подготовка\nАзат Жакиянов -\nПодключиться:\nhttps://us04web.zoom.us/j/4620412083?pwd=amV6eExyYUEzOXVUaGhYYURVcnVMQT09\nИдентификатор: 462 041 2083\nКод: 24', reply_markup=markup_classes)
 	elif message.text == 'Классный час':
 		await message.answer('Классный час\nЖанна Баелова -\nПодключиться:\nhttps://us04web.zoom.us/j/9712435106?pwd=UlIwQ1B0b0M4MTJmVVFhSnMyNzBZQT09\nИдентификатор: 971 243 5106\nКод: 046044', reply_markup=markup_classes)	
 	elif message.text == 'Алгебра':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_algebra)
-	elif message.text == 'Мурат Буланов':	
-		await message.answer('Алгебра\nМурат Буланов -\nПодключиться:\nhttps://us04web.zoom.us/j/5803259738?pwd=QUphOEhPNlgzSmxMajkxV3VrbkhrZz09\nИдентификатор: 580 325 9738\nКод: 123456', reply_markup=markup_classes)
-	elif message.text == 'Асем Буланова':
-		await message.answer('Алгебра\nАсем Буланова -\nПодключиться:\nhttps://us02web.zoom.us/j/2147576084?pwd=c3A0WjJqMHA5UjdlbjRYcVJ5ZGtqUT09\nИдентификатор: 214 757 6084\nКод: 24', reply_markup=markup_classes)
 	elif message.text == 'Всемирная история':
 		await message.answer('Всемирная история\nРысхан Байшыгашова\nПодключиться:\nhttps://us04web.zoom.us/j/4182789875?pwd=S3Z2UG9taUlaajRVV05IUktHblMzdz09\nИдентификатор: 418 278 9875\nКод: 029958', reply_markup=markup_classes)
 	# Wednesday 
@@ -254,50 +246,30 @@ async def menu(message: types.Message):
 		await message.reply('➡️', reply_markup=markup_wed_10AE)
 	elif message.text == 'Физика/География':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_phys_geo)
-	elif message.text == 'Mаулет Кисса':
-		await message.answer('Физика\nМаулет Кисса -\nПодключиться:\nhttps://us04web.zoom.us/j/5261561075?pwd=SUdYcXZoalFEVkhDV0RFN0U0NjZ1QT09\nИдентификатор: 526 156 1075\nКод: 172522', reply_markup=markup_classes)
-	elif message.text == 'Aйгерим Еркинбекова':
-		await message.answer('География \nАйгерим Еркинбекова -\nПодключиться:\nhttps://us04web.zoom.us/j/6281342021?pwd=S3lZdERoT3lmVVJKeDJpN1djbE9oQT09\nИдентификатор: 628 134 2021\nКод:897756', reply_markup=markup_classes)
 	elif message.text == 'Геометерия':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_geom)
-	elif message.text == 'Mурат Буланов':	
-		await message.answer('Алгебра\nМурат Буланов -\nПодключиться:\nhttps://us04web.zoom.us/j/5803259738?pwd=QUphOEhPNlgzSmxMajkxV3VrbkhrZz09\nИдентификатор: 580 325 9738\nКод: 123456', reply_markup=markup_classes)
-	elif message.text == 'Aсем Буланова':
-		await message.answer('Алгебра\nАсем Буланова -\nПодключиться:\nhttps://us02web.zoom.us/j/2147576084?pwd=c3A0WjJqMHA5UjdlbjRYcVJ5ZGtqUT09\nИдентификатор: 214 757 6084\nКод: 24', reply_markup=markup_classes)
 	elif message.text == 'English':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_english)
-	elif message.text == 'Асель Муханова':	
-		await message.answer('English\nАсель Муханова -\nПодключиться:\nhttps://us04web.zoom.us/j/3705039375?pwd=dnl3SUpDTGVBR0NSYWhUVXl4dEtsZz09\nИдентификатор: 370 503 9375\nКод: 464196', reply_markup=markup_classes)
-	elif message.text == 'Кырмызы Нурахметова':	
-		await message.answer('English\nКырмызы Нурахметова -\nПодключиться:\nhttps://us04web.zoom.us/j/3705039375?pwd=dnl3SUpDTGVBR0NSYWhUVXl4dEtsZz09\nИдентификатор: 370 503 9375\nКод: 464196', reply_markup=markup_classes)
 	elif message.text == 'Экономика':
 		await message.answer('Экономика\nГульбаршын Долаева -\nПодключиться:\nhttps://us04web.zoom.us/j/6659425539?pwd=ak9PdEJqZnlhYkp0cTc5VkxRQW13UT09\nИдентификатор: 665 942 5539\nКод: 99999', reply_markup=markup_classes)
+	# Thursday
 	elif message.text == 'Четверг 10(AE)':
 		await message.reply('➡️', reply_markup=markup_thu_10AE)
 	elif message.text == 'Химия':
 		await message.answer('Химия\nСаулетхан Амир -\nПодключиться:\nnone\nИдентификатор: none\nКод: none', reply_markup=markup_classes)
 	elif message.text == 'Русский язык и Литература':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_rus_lit)
-	elif message.text == 'Жанна Баелова':
-		await message.answer('Русский язык и Литература\nЖанна Баелова -\nПодключиться:\nhttps://us04web.zoom.us/j/9712435106?pwd=UlIwQ1B0b0M4MTJmVVFhSnMyNzBZQT09\nИдентификатор: 971 243 5106\nКод: 046044', reply_markup=markup_classes)
-	elif message.text == 'Жанна Жунисбекова':
-		await message.answer('Русский язык и Литература\nЖанна Жунисбекова -\nПодключиться:\nhttps://us04web.zoom.us/j/3494752418?pwd=ZVZwYm5paUxoS3ZrNytUc3d5RWhYdz09\nИдентификатор: 349 475 2418\nКод: 453743', reply_markup=markup_classes)
 	elif message.text == 'Лингвистика':	
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_ling)
-	elif message.text == 'Жадыра Бекбаева':	
-		await message.answer('Лингвистика\nЖадыра Бекбаева -\nПодключиться:\nhttps://us04web.zoom.us/j/8288810097?pwd=ellzVFpzVlFLT0JPU3ZOZ3A4WTE0QT09\nИдентификатор: 828 881 0097\nКод: 12345', reply_markup=markup_classes)
 	elif message.text == 'Абайтану':
-		await message.answer('Абайтану\nБақыт Нуркожаева -\nПодключиться:\nhttps://us04web.zoom.us/j/4865772347?pwd=SWhwNHNjRWE1TTlwRjJvZjFpNnphQT09\nИдентификатор: 486 577 2347\nКод: jBdv6e', reply_markup=markup_classes)
+		await message.reply('Выберите своего учителя➡️', reply_markup=markup_kz)
 	elif message.text == 'Основы права (2Г)':
 		await message.answer('Основы права\nРысхан Байшыгашова -\nПодключиться:\nhttps://us04web.zoom.us/j/4182789875?pwd=S3Z2UG9taUlaajRVV05IUktHblMzdz09\nИдентификатор: 418 278 9875\nКод: 029958', reply_markup=markup_classes)
+	# Friday
 	elif message.text == 'Пятница 10(AE)':
 		await message.reply('➡️', reply_markup=markup_fri_10AE)
 	elif message.text == 'Аударма':
 		await message.reply('Выберите своего учителя➡️', reply_markup=markup_audarma)
-	elif message.text == 'Гульшат Д.':
-		await message.answer('Аударма\nГульшат Д. -\nПодключиться:\nhttps://us04web.zoom.us/j/6776997623?pwd=eWhSSUE5TlFGc2hmWXpsU0poSDFsZz09\nИдентификатор: 677 699 7623\nКод: 192105', reply_markup=markup_classes)
-	elif message.text == 'Жаркын':
-		await message.answer('Аударма\nЖаркын -\nПодключиться:\nnone\nИдентификатор: none\nКод: none', reply_markup=markup_classes)
 	elif message.text == 'Самопознание':
 		await message.answer('Самопознание\nСымбат Майкен -\nПодключиться:\nhttps://us04web.zoom.us/j/7661181251?pwd=RnpKN2RtUS9GSmw1VUNiMWZBUC9jUT09\nИдентификатор: 766 118 1251\nКод: FT6KE5', reply_markup=markup_classes)
 	elif message.text == 'История Казахстана':
@@ -308,9 +280,43 @@ async def menu(message: types.Message):
 	# CLASS V
 	elif message.text == '10(V)':
 		await message.reply('На данный момент доступен только класс "10(AE)". Разработка уже в процессе, ждите обновлений!➡️', reply_markup=markup_menu)
-	#Daryn
+	# Daryn
 	elif message.text == '2San':
 		await message.reply('Доступ получен\n\nВ наличии:\nИстория Казахстана - 12 тем\n\nВыберите предмет:', reply_markup=markup_DO)
+	
+	# Teachers
+	elif message.text == 'Айзада Адильханкызы':
+		await message.answer('Информатика\nАйазада Адилханова -\nПодключиться:\nhttps://us04web.zoom.us/j/6739738314?pwd=UlQzc2hxcVR4QWlnMFQ3YTVnSjcxQT09\nИдентификатор: 673 973 8314\nКод: 112076', reply_markup=markup_classes)
+	elif message.text == 'Гульмира Апарбаева':
+		await message.answer('Информатика\nГульмира Апарбаева -\nПодключиться:\nhttps://us04web.zoom.us/j/6671115307?pwd=K1JsQ3ZPczJVRHRNVGgrTlF6VVhiUT09\nИдентификатор: 667 111 5307\nКод: 551171', reply_markup=markup_classes)
+	elif message.text == 'Айгерим Еркинбекова':
+		await message.answer('География\nАйгерим Еркинбекова -\nПодключиться:\nhttps://us04web.zoom.us/j/6281342021?pwd=S3lZdERoT3lmVVJKeDJpN1djbE9oQT09\nИдентификатор: 628 134 2021\nКод:897756', reply_markup=markup_classes)
+	elif message.text == 'Маулет Кисса':
+		await message.answer('Физика\nМаулет Кисса -\nПодключиться:\nhttps://us04web.zoom.us/j/5261561075?pwd=SUdYcXZoalFEVkhDV0RFN0U0NjZ1QT09\nИдентификатор: 526 156 1075\nКод: 172522', reply_markup=markup_classes)
+	elif message.text == 'Bakhyt_N':
+		await message.answer('Казахский язык\nБакыт Нуркожаева -\nПодключиться:\nhttps://us04web.zoom.us/j/4865772347?pwd=SWhwNHNjRWE1TTlwRjJvZjFpNnphQT09\nИдентификатор: 486 577 2347\nКод: jBdv6e', reply_markup=markup_classes)
+	elif message.text == 'Мурат Буланов':	
+		await message.answer('Алгебра\nМурат Буланов -\nПодключиться:\nhttps://us04web.zoom.us/j/5803259738?pwd=QUphOEhPNlgzSmxMajkxV3VrbkhrZz09\nИдентификатор: 580 325 9738\nКод: 123456', reply_markup=markup_classes)
+	elif message.text == 'Асем Буланова':
+		await message.answer('Алгебра\nАсем Буланова -\nПодключиться:\nhttps://us02web.zoom.us/j/2147576084?pwd=c3A0WjJqMHA5UjdlbjRYcVJ5ZGtqUT09\nИдентификатор: 214 757 6084\nКод: 24', reply_markup=markup_classes)
+	elif message.text == 'Асель Муханова':	
+		await message.answer('English\nАсель Муханова -\nПодключиться:\nhttps://us04web.zoom.us/j/3705039375?pwd=dnl3SUpDTGVBR0NSYWhUVXl4dEtsZz09\nИдентификатор: 370 503 9375\nКод: 464196', reply_markup=markup_classes)
+	elif message.text == 'Кырмызы Нурахметова':	
+		await message.answer('English\nКырмызы Нурахметова -\nПодключиться:\nhttps://us04web.zoom.us/j/3705039375?pwd=dnl3SUpDTGVBR0NSYWhUVXl4dEtsZz09\nИдентификатор: 370 503 9375\nКод: 464196', reply_markup=markup_classes)
+	elif message.text == 'Жанна Баелова':
+		await message.answer('Русский язык и Литература\nЖанна Баелова -\nПодключиться:\nhttps://us04web.zoom.us/j/9712435106?pwd=UlIwQ1B0b0M4MTJmVVFhSnMyNzBZQT09\nИдентификатор: 971 243 5106\nКод: 046044', reply_markup=markup_classes)
+	elif message.text == 'Жанна Жунисбекова':
+		await message.answer('Русский язык и Литература\nЖанна Жунисбекова -\nПодключиться:\nhttps://us04web.zoom.us/j/3494752418?pwd=ZVZwYm5paUxoS3ZrNytUc3d5RWhYdz09\nИдентификатор: 349 475 2418\nКод: 453743', reply_markup=markup_classes)
+	elif message.text == 'Жадыра Бекбаева':	
+		await message.answer('Лингвистика\nЖадыра Бекбаева -\nПодключиться:\nhttps://us04web.zoom.us/j/8288810097?pwd=ellzVFpzVlFLT0JPU3ZOZ3A4WTE0QT09\nИдентификатор: 828 881 0097\nКод: 12345', reply_markup=markup_classes)
+	elif message.text == 'Гульшат Д.':
+		await message.answer('Аударма\nГульшат Д. -\nПодключиться:\nhttps://us04web.zoom.us/j/6776997623?pwd=eWhSSUE5TlFGc2hmWXpsU0poSDFsZz09\nИдентификатор: 677 699 7623\nКод: 192105', reply_markup=markup_classes)
+	elif message.text == 'Жаркын':
+		await message.answer('Аударма\nЖаркын -\nПодключиться:\nnone\nИдентификатор: none\nКод: none', reply_markup=markup_classes)
+	elif message.text == 'Tuganai_A':
+		await message.answer('Казахский язык\nТуганай Аяпова -\nПодключиться:\nhttps://us04web.zoom.us/j/9203579917?pwd=LzhINlRCbEk5eGs2NVFNYlVaQjlUQT09\nИдентификатор: 920 357 9917\nКод: 158354', reply_markup=markup_classes)
+
+
 	# ist_kz
 	elif message.text == 'Истoрия Кaзaхстaнa':
 		await message.reply('Выберите тему', reply_markup=markup_ist_kz)
