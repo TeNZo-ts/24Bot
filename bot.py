@@ -90,7 +90,7 @@ Zhanna_B = KeyboardButton('Жанна Баелова')
 Zhanna_Z = KeyboardButton('Жанна Жунисбекова')
 Zhadyra_B = KeyboardButton('Жадыра Бекбаева')
 Gulzhat_D = KeyboardButton('Гульшат Д.')
-Zharkyn = KeyboardButton('Жаркын')
+Zharkyn = KeyboardButton('Жаркын Сансызбай')
 Nurlan_T = KeyboardButton('Нурлан Токтарбекулы')
 Zialy_A = KeyboardButton('Зиалы Алтаевна')
 Kamida_T = KeyboardButton('Камида Тулеметова')
@@ -320,7 +320,7 @@ async def menu(message: types.Message):
 		await message.answer('Лингвистика\nЖадыра Бекбаева -\nПодключиться:\nhttps://us04web.zoom.us/j/8288810097?pwd=ellzVFpzVlFLT0JPU3ZOZ3A4WTE0QT09\nИдентификатор: 828 881 0097\nКод: 12345', reply_markup=markup_classes)
 	elif message.text == 'Гульшат Д.':
 		await message.answer('Аударма\nГульшат Д. -\nПодключиться:\nhttps://us04web.zoom.us/j/6776997623?pwd=eWhSSUE5TlFGc2hmWXpsU0poSDFsZz09\nИдентификатор: 677 699 7623\nКод: 192105', reply_markup=markup_classes)
-	elif message.text == 'Жаркын':
+	elif message.text == 'Жаркын Сансызбай':
 		await message.answer('Аударма\nЖаркын -\nПодключиться:\nnone\nИдентификатор: none\nКод: none', reply_markup=markup_classes)
 	elif message.text == 'Нурлан Токтарбекулы':
 		await message.answer('English\nНурлан Токтарбекулы -\nПодключиться:\nhttps://us04web.zoom.us/j/7461456484?pwd=NW9Ob1VPNkw1ZzdUaTgzUXFjeWZtQT09\nИдентификатор: 746 145 6484\nКод: 1995', reply_markup=markup_classes)
