@@ -177,7 +177,7 @@ markup_prava = ReplyKeyboardMarkup(resize_keyboard=True).add(answer_law_bas_10).
 async def start_command(message: types.Message):
 	# Welcome!:)
 	start = open('symbol.jpg', "rb")
-	await bot.send_photo(message.chat.id, start, '🔔Добро пожаловать!🔔\nЯ бот🤖, выполняю команды моих разработчиков.\nМоя задача сэкономить вам приличное время и оказать незаменимую помощь!\n\nПриятного пользования!💫', reply_markup=markup_menu)
+	await bot.send_photo(message.chat.id, start, '🔔Добро пожаловать!🔔\nЯ бот🤖, выполняю команды моих разработчиков.\nМоя задача сэкономить Ваше время и оказать незаменимую помощь!\n\nПриятного пользования!💫', reply_markup=markup_menu)
 
 @dp.message_handler(content_types=['text'])
 async def menu(message: types.Message):
