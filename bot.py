@@ -72,7 +72,7 @@ chem_bio = KeyboardButton('Химия/Биология')
 mir_ist1 = KeyboardButton('Всемирная история (1Г)')
 geo = KeyboardButton('География')
 law_bas = KeyboardButton('Основы права')
-chemEng = KeyboardButton('Химия (English')
+chemEng = KeyboardButton('Химия (English)')
 phys = KeyboardButton('Физика')
 mir_ist2 = KeyboardButton('Всемирная история (2Г)')
 # Teachers 
@@ -208,6 +208,13 @@ async def menu(message: types.Message):
 	# Monday
 	elif message.text == 'Понедельник 10(a)':
 		await message.reply('➡️', reply_markup=markup_mon_10a)
+	# Tuesday
+	elif message.text == 'Вторник 10(a)':
+		await message.reply('➡️', reply_markup=markup_tue_10a)
+	elif message.text == 'Основы права':
+		await message.answer('Основы права\nРысхан Байшыгашова -\nПодключиться:\nhttps://us04web.zoom.us/j/4182789875?pwd=S3Z2UG9taUlaajRVV05IUktHblMzdz09\nИдентификатор: 418 278 9875\nКод: 029958', reply_markup=markup_classes)
+	elif message.text == 'Химия (English)':
+		await message.answer('Химия\nЖаркын -\nПодключиться:\nnone\nИдентификатор: none\nКод: none', reply_markup=markup_classes)
 	# Class 10ae
 	elif message.text == '10(ae)':
 		tt10ae_1 = open('tt10ae.jpg', "rb")
@@ -325,8 +332,8 @@ async def menu(message: types.Message):
 	elif message.text == '2San':
 		await message.reply('Доступ получен✅\n\nВ наличии -\nИстория Казахстана: 1-12 тем\nОсновы права: 10-23 тем \n\nВыберите предмет:', reply_markup=markup_DO)
 	# ist_kz
-	elif message.text == 'Иcтoрия Кaзaxcтaнa':
-		await message.reply('Выберите тему:', reply_markup=markup_ist_kz)
+	elif message.text == 'Иcтoрия Кaзaxcтaнa:':
+		await message.reply('Выберите тему', reply_markup=markup_ist_kz)
 	elif message.text == '1. Орталық Азия: ұғымының тарихи':
 		await message.reply('1) Орталық Азияда орналасқан мемлекетті көрсетіңіз: \n Ответ: Қырғызстан \n\n 2) Алтайдан оңтүстікке және Памирден шығысқа қарайғы аумақты Орталық Азия деп қарастырған ғалым: \n Ответ: А.Гумбольдт \n\n 3) Орталық Азияда орналасқан ірі құмды шөл: \n Ответ: Қызылқұм \n\n 4) Физикалық географияда Орталық Азия ұғымын қалай қолданады? \n Ответ: ішкі өзен алабына байланысты \n\n 5) Орталық Азияны Еуразияның ""ішкі биік аудандары"" деп қарастырған неміс ғалымы: \n Ответ: Карл Риттер \n\n 6) Еуразияның ішкі ағынды алабына жататын өзен: \n Ответ: Әмудария \n\n 7) ХІХ ғасырда Орталық Азия ұғымын кеңінен қолданған қай елдің ғалымдары? \n Ответ: неміс \n\n 8) Орталық Азиядағы ірі өзен: \n Ответ: Сырдария \n\n 9) Ресей империясы кезінде Орта Азия ұғымымен қатар қолданылған ұғым: \n Ответ: Түркістан \n\n 10) 1991 жылы ыдыраған мемлекет: \n Ответ:КСРО', reply_markup=markup_DO)
 	elif message.text == '2. Орталық Азияның дәстүрлі':
